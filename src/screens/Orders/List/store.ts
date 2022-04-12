@@ -71,6 +71,10 @@ export default class OrdersListState {
   async loadOrders() {
     this.loading = true;
     this.loading = false;
+    const result = await client.query(GET_ORDERS_QUERY, {
+      page: 1
+    }).toPromise();
+    this.orders = result.data.getOrders.orders;
   }
 
   initialize() {

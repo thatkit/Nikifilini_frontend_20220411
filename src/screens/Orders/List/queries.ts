@@ -6,7 +6,7 @@ export const GET_ORDERS_QUERY = gql`
       orders {
         id
         number
-        site
+        # site
         createdAt
         delivery {
           code

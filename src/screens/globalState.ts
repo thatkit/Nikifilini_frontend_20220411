@@ -1,5 +1,6 @@
 import { createContext, useContext } from "react";
 import client from "api/gql";
+import { useQuery } from "urql";
 import {
   DELIVERY_TYPES_QUERY,
   ORDER_STATUSES_QUERY,
