@@ -4,19 +4,33 @@
   background white
 
 .screenWrapper
+  height 100vh
+  width calc(100% - 84px)
   display block
-  
+  position relative
+  bottom 100%
+  left 84px
+  overflow scroll
+  coolScrollbar()
+
 .table
-  display block
+  width 100%
+  padding 0 1rem
+  display table
+  border-spacing 0 2px
 
 .head
-  display block
-  
-.row
-  display block
+  display table-header-group
 
 .body
-  display block
+  display table-row-group
+
+.row
+  display table-row
+
+  div
+    display table-cell
+    margin auto 0
 
 .pagination
   display block

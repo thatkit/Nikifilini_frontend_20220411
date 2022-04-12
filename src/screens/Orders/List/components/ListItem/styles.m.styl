@@ -1,15 +1,32 @@
 @import '../../../../../common.styl'
 
+// .row
+//   min-height 64px
+
+//   div
+//     display flex
+//     align-items center
+
+//     div
+//       width 80%
+
+//     &:last-child div
+//       width 100%
+
 .row
   min-height 64px
+  display table-row
 
   div
-    display flex
-    align-items center
+    display table-cell
 
     div
       width 80%
-
+      display flex
+      align-items stretch
+      vertical-align middle
+      text-align center
+    
     &:last-child div
       width 100%
 
