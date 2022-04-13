@@ -15,7 +15,6 @@ const OrdersList = observer(
     const [state] = React.useState(new OrdersListState());
 
     useEffect(() => {
-      console.log(state.canNext)
       if (state.initialized) return;
       state.initialize();
     });
