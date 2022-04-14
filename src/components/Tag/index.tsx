@@ -18,7 +18,7 @@ const Tag = ({ color, text }: Props): JSX.Element => {
         [styles.red]: color === "red",
       })}
     >
-      {text}
+      <p>&nbsp;{text}&nbsp;</p>
     </div>
   );
 };
