@@ -1,5 +1,11 @@
 @import '../../../common.styl'
 
+.screen
+  padding 14px 28px
+  border-radius 4px
+  background white
+  coolScrollbar()
+
 .screenWrapper
   height 100vh
   width calc(100% - 84px)
@@ -11,10 +17,20 @@
   overflow scroll
   coolScrollbar()
 
-.screen
-  border-radius 4px
-  background white
-  coolScrollbar()
+.row
+  display flex
+  justify-content space-between
+
+  div
+    width 30%
+
+    div
+      width 100%
+
+.orderNumber
+  padding-left 14px
+  font-size xx-large
 
 .items
+  width 100%
   display block

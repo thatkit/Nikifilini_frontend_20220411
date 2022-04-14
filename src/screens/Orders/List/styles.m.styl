@@ -1,6 +1,7 @@
 @import '../../../common.styl'
 
 .screen
+  padding 14px 28px
   border-radius 4px
   background white
 
@@ -17,12 +18,14 @@
 
 .table
   width 100%
-  padding 0 1rem
   display table
-  border-spacing 0 2px
+  border-spacing 7px
 
 .head
   display table-header-group
+
+  div
+    padding-bottom 14px
 
 .body
   display table-row-group
@@ -32,7 +35,8 @@
 
   div
     display table-cell
-    margin auto 0
 
 .pagination
-  display block
+  margin-top 14px
+  display flex
+  gap 14px

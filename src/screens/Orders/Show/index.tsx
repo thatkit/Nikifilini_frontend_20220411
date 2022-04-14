@@ -32,8 +32,8 @@ const OrdersShow = observer(
           {state.loading && <span>Loading...</span>}
           {!state.loading && (
             <div>
-              <div className={"styles.row"}>
-                <div className={"styles.orderNumber"}>{state?.order?.number}</div>
+              <div className={styles.row}>
+                <div className={styles.orderNumber}>{state?.order?.number}</div>
                 <div title={state?.order?.delivery?.code}>
                   <DeliveryType code={state?.order?.delivery?.code || ''} />
                 </div>

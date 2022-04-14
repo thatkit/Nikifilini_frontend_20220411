@@ -71,8 +71,8 @@ export default class OrdersListState {
   async loadOrders() {
     this.loading = true;
     const result = await client
-    .query(GET_ORDERS_QUERY, { page: this.page })
-    .toPromise();
+      .query(GET_ORDERS_QUERY, { page: this.page })
+      .toPromise();
     this.setTotalPages(result.data.getOrders.pagination.totalPageCount);
     this.loading = false;
     this.orders = result.data.getOrders.orders;
