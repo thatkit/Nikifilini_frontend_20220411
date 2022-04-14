@@ -75,7 +75,7 @@ export default class OrdersListState {
       .toPromise();
     this.setTotalPages(result.data.getOrders.pagination.totalPageCount);
     this.loading = false;
-    this.orders = result.data.getOrders.orders;
+    this.setOrders(result.data.getOrders.orders);
   }
 
   initialize() {
