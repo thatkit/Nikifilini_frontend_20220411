@@ -88,7 +88,7 @@ export class GlobalState {
   }
   
   setDeliveryTypes(statuses: CrmType[]) {
-    console.log(statuses);
+    // console.log(statuses);
     this.data.deliveryTypes = statuses;
     this.status.deliveryTypes = true;
   }
